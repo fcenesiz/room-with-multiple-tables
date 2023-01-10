@@ -10,6 +10,11 @@ import com.fcenesiz.roomwithmultipletables.entities.Subject
 import com.fcenesiz.roomwithmultipletables.entities.relations.StudentSubjectCrossRef
 import kotlinx.coroutines.launch
 
+/**
+ * director     1 - 1       school
+ * school       1 - N       student
+ * student      N - M       subject
+ */
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
